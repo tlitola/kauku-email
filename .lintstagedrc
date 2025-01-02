@@ -1,0 +1,4 @@
+{
+	"*": "npx prettier --check",
+	"*.{ts,tsx}": "npx eslint --max-warnings=0"
+}
