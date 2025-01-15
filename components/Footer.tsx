@@ -20,7 +20,7 @@ export const Footer: FC<{ imageSource?: string }> = ({ imageSource }) => (
 					</InfoText>
 				)}
 				<InfoText className="text-center text-background mb-lg">
-					<b>Osoitelähde:</b> <Link>Jäsenrekisteri Kuksa</Link>
+					<b>Osoitelähde:</b> Jäsenrekisteri Kuksa
 				</InfoText>
 				<InfoText className="text-center text-background mb-lg">
 					Copyright © {new Date().getFullYear()} Kauka-Kuutit ry

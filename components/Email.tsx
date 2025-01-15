@@ -7,14 +7,18 @@ import { Title } from './Title';
 import { Recipients } from './Recipients';
 import { colors } from '../styles/colors';
 import { Footer } from './Footer';
+import { InfoText } from './InfoText';
+import { Link } from './Link';
 
 export const Email: FC<{
 	children: ReactNode;
 	titleShort: string;
 	title: string;
 	heroImage?: string;
+	heroAlt?: string;
 	imageSource?: string;
-}> = ({ children, titleShort, title, heroImage, imageSource }) => (
+	webVersionurl: string;
+}> = ({ children, titleShort, title, heroImage, imageSource, webVersionurl }) => (
 	<Tailwind config={tailwindConfig}>
 		<Html>
 			<Head>
@@ -51,6 +55,9 @@ export const Email: FC<{
 				</style>
 			</Head>
 			<Body style={main} className={`bg-background py-xl px-md`}>
+				<InfoText className="w-full text-center">
+					Eikö viesti näy oikein? <Link href={webVersionurl}>Lue se selaimessa.</Link>
+				</InfoText>
 				<Container className="bg-white shadow-sm max-w-screen-md">
 					<Recipients recipients="Lippukunnan jäsenet huoltajineen" />
 					<Header title={titleShort} />

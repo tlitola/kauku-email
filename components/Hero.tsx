@@ -3,4 +3,5 @@ import { Img } from './Img';
 
 export const Hero: FC<{
 	imageUrl?: string;
-}> = ({ imageUrl }) => (imageUrl ? <Img alt="hero image" src={imageUrl} /> : null);
+	heroAlt?: string;
+}> = ({ imageUrl, heroAlt = 'Hero image' }) => (imageUrl ? <Img alt={heroAlt} src={imageUrl} /> : null);
