@@ -12,7 +12,7 @@ export const List: FC<{ children: ReactNode; variant?: 'ordered' | 'unordered'; 
 };
 
 export const Li: FC<{ children: ReactNode; className?: string }> = ({ children, className }) => (
-	<li className={`${className ?? ''}`}>
+	<li className={`pl-lg ${className ?? ''}`}>
 		<Text>{children}</Text>
 	</li>
 );

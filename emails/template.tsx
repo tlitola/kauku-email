@@ -13,6 +13,7 @@ export const Template: FC = () => (
 		title="Esimerkki otsikko"
 		heroImage="https://www.kauku.fi/wp-content/uploads/cropped-20201207_083818-scaled-1.jpg"
 		imageSource="Aapo Rainio"
+		webVersionurl=""
 	>
 		<SectionsWrapper>
 			<Section>
