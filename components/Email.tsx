@@ -14,11 +14,20 @@ export const Email: FC<{
 	children: ReactNode;
 	titleShort: string;
 	title: string;
+	recipients?: string;
 	heroImage?: string;
 	heroAlt?: string;
 	imageSource?: string;
 	webVersionurl: string;
-}> = ({ children, titleShort, title, heroImage, imageSource, webVersionurl }) => (
+}> = ({
+	children,
+	titleShort,
+	title,
+	heroImage,
+	imageSource,
+	webVersionurl,
+	recipients = 'Lippukunnan jäsenet huoltajineen',
+}) => (
 	<Tailwind config={tailwindConfig}>
 		<Html>
 			<Head>
@@ -59,7 +68,7 @@ export const Email: FC<{
 					Eikö viesti näy oikein? <Link href={webVersionurl}>Lue se selaimessa.</Link>
 				</InfoText>
 				<Container className="bg-white shadow-sm max-w-screen-md">
-					<Recipients recipients="Lippukunnan jäsenet huoltajineen" />
+					<Recipients recipients={recipients} />
 					<Header title={titleShort} />
 					<Hero imageUrl={heroImage} />
 					<Title title={title} />
