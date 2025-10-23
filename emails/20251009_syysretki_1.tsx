@@ -8,15 +8,15 @@ import { Column, Row } from '@react-email/components';
 import { Li, List } from '../components/List';
 import { Hr } from '../components/Hr';
 
-const webVersionUrl = 'https://www.kauku.fi/2025/02/14/vihtorin-virkea-vaaliretki-21-23-3/';
+const webVersionUrl = 'https://www.kauku.fi/2025/10/22/iiriksen-noitakattila-14-11-16-11/';
 
 export const Template: FC = () => (
 	<Email
-		titleShort="Vihtorin Virkeä Vaaliretki – 1. Retkikirje"
-		title="Vihtorin Virkeä Vaaliretki"
-		heroImage="https://www.kauku.fi/wp-content/uploads/vaalipollo-e1739488088566.jpeg"
-		heroAlt="Vaalipöllö"
-		imageSource="Suomen Partiolaiset – Vaalipöllö"
+		titleShort="Iiriksen noitakattila – 1. Retkikirje"
+		title="Iiriksen noitakattila 14.11. – 16.11."
+		heroImage="https://www.kauku.fi/wp-content/uploads/20211002_alex_inkilainen_kaannekohta_0347-e1760027967512.jpg"
+		heroAlt=""
+		imageSource="Suomen Partiolaiset – Alex Inkilainen"
 		webVersionurl={webVersionUrl}
 	>
 		<SectionsWrapper final alternateColors={false}>
@@ -25,10 +25,9 @@ export const Template: FC = () => (
 					<Link href={webVersionUrl}>The English version is available on our website</Link>
 				</InfoText>
 				<Text>
-					Tervetuloa Kauka-Kuuttien yhteiselle kevätretkelle Espoon Nuuksioon 21.–23.3. Retki järjestetään Kattilajärven
-					leirikeskuksessa, jonka koon vuoksi retki on jaettu kahteen osaan. Perjantaista lauantaihin sudenpennut ja
-					seikkailijat pääsevät nauttimaan retkielämästä ja lauantaista sunnuntaihin on tarpojien ja sitä vanhempien
-					vuoro.
+					Tervetuloa Kauka-Kuuttien yhteiselle syysretkelle Vihdin Tervalammelle 14.–16.11. Retki järjestetään Mustien
+					Veljien ja Kirisiskojen kämpällä Kirilässä. Retkelle voi osallistua oman halun mukaan joko koko ajaksi tai
+					ainoastaan perjantaista lauantaihin.
 				</Text>
 			</Section>
 			<Hr />
@@ -38,7 +37,7 @@ export const Template: FC = () => (
 						<Section.SubTitle>Sijainti</Section.SubTitle>
 					</Column>
 					<Column className="w-2/3">
-						<Text>Kattilajärven leirikeskus, Kattilajärventie 30 Espoo</Text>
+						<Text>Kirilä, Pekkasenkuja 1, 03220 Tervalampi</Text>
 					</Column>
 				</Row>
 			</Section>
@@ -51,13 +50,13 @@ export const Template: FC = () => (
 					<Column className="w-2/3">
 						<List>
 							<Li>
-								<b>21.3. klo. 17:30 – 22.3. klo 16:00:</b> Rohkeat Apinat ja Tähtipanssariketut
+								Koko retki: <b>14.11. klo. 17:45 – 16.11. klo 13:00</b>
 							</Li>
 							<Li>
-								<b>22.3. klo. 9:00 – 23.3. klo 14:00:</b> Vesikauhu ja Salama-Ketut
+								Lyhyt retki: <b>14.11. klo. 17:45 – 15.11. klo 16:00</b>
 							</Li>
 							<Li>
-								<b>22.3. klo 10:00 – 12:00:</b> Perhepartio
+								Perhepartio: <b>15.11. klo 10:00 – 13:00</b>
 							</Li>
 						</List>
 					</Column>
@@ -71,34 +70,44 @@ export const Template: FC = () => (
 					</Column>
 					<Column className="w-2/3">
 						<Text>
-							<b>Rohkeat Apinat ja Tähtipanssariketut</b>
+							Kuljeteukset retkelle ja pois retkeltä tapahtuu kimppakyydein. Kerrothan ilmoittautumisen yhteydessä
+							mikäli pääset kuljettamaan retkeilijöitä. Kimppakyydit lähtevät ja palaavat Kauklahden aseman
+							liityntäpysäköinnistä.
+						</Text>
+						<Text>
+							<b>Lähtö</b>
 						</Text>
 						<List>
 							<Li>
-								<b>Lähtö: 21.3. klo 17:30</b> Kauklahden aseman liityntäpysäköinnistä Vantinportti 5
-							</Li>
-							<Li>
-								<b>Paluu: 22.3. klo 16:00</b> Kattilajärven leirikeskukselta. Takaisin Kauklahdessa ollaan noin 16:30.
+								<b>14.11. klo. 17:45</b> Kauklahden aseman liityntäpysäköinnistä osoitteessa Vantinportti 5. Lähdemme
+								ajamaan kohti retkipaikkaa kello 18:00, mutta olethan ajoissa paikalla!
 							</Li>
 						</List>
 						<Text>
-							<b>Vesikauhu ja Salama-Ketut</b>
+							<b>Paluu</b>
 						</Text>
 						<List>
 							<Li>
-								<b>Lähtö: 22.3. klo 09:00</b> Kauklahden aseman liityntäpysäköinnistä Vantinportti 5
+								<b>Koko retki: 16.11. klo 13:00</b> Kirilästä. Takaisin Kauklahdessa noin kello 13:40.
 							</Li>
 							<Li>
-								<b>Paluu: 23.3. klo 14:00</b> Kattilajärven leirikeskukselta kimppakyydein. Takaisin Kauklahdessa ollaan
-								noin 14:30. Kyytijaot viestitään viimeistään edeltävänä iltana.
+								<b>Lyhyt retki: 15.11. klo 16:00</b> Kirilästä. Jos lapsesi on mukana vain lyhyen retkiajan, varauduthan
+								hakemaan hänet retkeltä itse. Pyrimme järjestämään kimppakyydit, jos lähtijöitä on tarpeeksi.
 							</Li>
 						</List>
 						<Text>
 							<b>Perhepartio</b>
 						</Text>
 						<List>
-							<Li>Perhepartiolaiset huolehtivat omista kyydityksistä, mutta parkkipaikan koon vuoksi kimppakyytejä</Li>
+							<Li>
+								Perhepartiolaiset huolehtivat omista kyydityksistä, mutta parkkipaikan koon vuoksi kimppakyytejä
+								suositellaan!
+							</Li>
 						</List>
+						<Text>
+							Retkeilijät jätetään parkkipaikalle ja siitä kävellään polku ylös kämpälle. Samalta parkkipaikalta
+							retkeilijät noudetaan sunnuntaina. Parkkipaikalla on tilaa noin kuudelle autolle.
+						</Text>
 					</Column>
 				</Row>
 			</Section>
@@ -111,14 +120,13 @@ export const Template: FC = () => (
 					<Column className="w-2/3">
 						<List>
 							<Li>
-								<b>Kuksaan viimeistään 7.3.</b> <Link href="http://kuksaan.fi/79096">kuksaan.fi/79096</Link>
+								<b>Kuksaan viimeistään 2.11.</b> <Link href="https://kuksaan.fi/87483">kuksaan.fi/87483</Link>
 							</Li>
 							<Li>
 								Perhepartiolaiset ilmoittautuvat kaikki omilla tunnuksillaan, lapset ja huoltajat erikseen (jos niitä ei
-								ole, olkaa yhteydessä jäsensihteeri Mariaan,{' '}
-								<Link href="mailto:kaukakuutit@gmail.com">kaukakuutit@gmail.com</Link>)
+								ole, olkaa yhteydessä jäsensihteeri Mariaan, <Link href="mailto:info@kauku.fi">info@kauku.fi</Link>)
 							</Li>
-							<Li>Ilmoittautumisen voi peruuttaa maksutta 7.3.2024 mennessä laittamalla viestiä retken johtajille.</Li>
+							<Li>Ilmoittautumisen voi peruuttaa maksutta 2.11.2025 mennessä laittamalla viestiä retken johtajille.</Li>
 						</List>
 					</Column>
 				</Row>
@@ -131,24 +139,91 @@ export const Template: FC = () => (
 					</Column>
 					<Column className="w-2/3">
 						<Text>
-							Retkellä sudenpennut nukkuvat pääsääntöisesti sisällä ja sitä vanhemmat ulkona kamiinalämmitteisessä
-							teltassa. <b>Varauduttehan siis riittävän lämpimillä makuupusseilla ja paksuilla makuualustoilla.</b>
+							Retkellä kaikki sudenpentuja vanhemmat nukkuvat pääsääntöisesti ainakin toisen yön ulkona.{' '}
+							<b>Varauduttehan siis riittävän lämpimillä makuupusseilla ja paksuilla makuualustoilla.</b>
 						</Text>
+					</Column>
+				</Row>
+			</Section>
+			<Hr />
+			<Section multiRow>
+				<Row>
+					<Column className="w-1/3 pr-md" valign="top">
+						<Section.SubTitle>Retkimaksu</Section.SubTitle>
+					</Column>
+					<Column className="w-2/3">
+						<Text>
+							Retken hinta määräytyy retken pituuden mukaan. Tarkemmat maksutiedot löytyvät ilmoittautumisen yhteydessä
+							lähetettävästä ilmoittautumisvahvistuksesta.
+						</Text>
+						<List>
+							<Li>Koko retki: 15€</Li>
+							<Li>Lyhyt retki: 10€</Li>
+							<Li>Perhepartiolaisille retken hinta on 5€ (yli 3-vuotiaille).</Li>
+						</List>
+						<Text>
+							Retkimaksulle voidaan myös myöntää vapautus taloudellisin, terveydellisin ja sosiaalisin perustein. Jos
+							haluatte kuulla lisää mahdollisuudesta, olkaa yhteydessä lippukunnanjohtaja Toukoon (
+							<Link href="mailto:touko.litola@kauku.fi">touko.litola@kauku.fi</Link>, p.{' '}
+							<Link target="_self" href="tel:045 209 3886">
+								045 209 3886
+							</Link>
+							)
+						</Text>
+						<Text>
+							Retkelle on myös saatavilla tarvittaessa lainavarusteita. Lippukunnalla on lainattavana ainakin rinkkoja,
+							makuupusseja ja makuualustoja. Näistä voit tiedustella lisää Toukolta.
+						</Text>
+					</Column>
+				</Row>
+			</Section>
+			<Hr />
+			<Section multiRow>
+				<Row>
+					<Column className="w-1/3 pr-md" valign="top">
+						<Section.SubTitle>Helppo tulla</Section.SubTitle>
+					</Column>
+					<Column className="w-2/3">
+						<Text>
+							Retkellä on käytössä Suomen Partiolaisten{' '}
+							<Link href="https://www.partio.fi/partiolaiselle/apua-ja-ohjeita/tapahtumien-saavutettavuus/helppo-tulla-tunnus/">
+								Helppo tulla -tunnus
+							</Link>
+							.
+						</Text>
+						<Text>
+							Tapahtuman suunnittelussa on otettu huomioon seuraavat tunnuksen kriteerit. Huomioithan, että kämppä ja
+							sen ympäristö ei ole helppokulkuinen.
+						</Text>
+						<List>
+							<Li>Hygienia</Li>
+							<Li>Kieli</Li>
+							<Li>Lapsiperhe</Li>
+							<Li>Lepo ja yöpyminen</Li>
+							<Li>Lääkitys ja ensiapu</Li>
+							<Li>Ohjelma</Li>
+							<Li>Hyvä olla</Li>
+							<Li>Raha</Li>
+							<Li>Ruoka</Li>
+						</List>
 					</Column>
 				</Row>
 			</Section>
 			<Hr />
 			<Section>
 				<Text>
-					Lisätietoa retkestä on luvassa ilmoittautuneille toisessa retkikirjeessä maaliskuussa. Sillä välin
-					mahdollisiin kysymyksiin vastaavat retkenjohtajat Touko (
-					<Link href="mailto:touko@litola.net">touko@litola.net</Link>, p.{' '}
-					<Link target="_self" href="tel:045 209 3886">
-						045 209 3886
+					Lisätietoa retkestä, ja esimerkiksi pakkauslista, on luvassa ilmoittautuneille toisessa retkikirjeessä
+					marraskuussa. Sillä välin mahdollisiin kysymyksiin vastaavat retkenjohtajat Hilla (p.{' '}
+					<Link target="_self" href="tel:045 695 4808">
+						045 695 4808
 					</Link>
-					) ja Anna (<Link href="mailto:anna.nummela@gmail.com">anna.nummela@gmail.com</Link>, p.{' '}
+					), Kalavanukas (Ella, p.{' '}
 					<Link target="_self" href="tel:050 458 1670">
-						050 458 1670
+						045 699 9811
+					</Link>
+					) ja Rané (Elsá, p.{' '}
+					<Link target="_self" href="tel:045 156 3073">
+						045 156 3073
 					</Link>
 					)
 				</Text>

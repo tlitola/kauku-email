@@ -32,8 +32,8 @@ export const Footer: FC<{ imageSource?: string }> = ({ imageSource }) => (
 				<Title>Kauka-Kuutit ry</Title>
 				<Text>Hansatie 2B, 02780 Espoo</Text>
 				<Text>
-					<Link className="text-wrap" href="mailto:kaukakuutit@gmail.com">
-						kaukakuutit@&#8203;gmail.com
+					<Link className="text-wrap" href="mailto:info@kauku.fi">
+						info@&#8203;kauku.fi
 					</Link>
 				</Text>
 				<Text>
