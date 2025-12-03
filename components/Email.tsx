@@ -9,11 +9,12 @@ import { colors } from '../styles/colors';
 import { Footer } from './Footer';
 import { InfoText } from './InfoText';
 import { Link } from './Link';
+import { Hr } from './Hr';
 
 export const Email: FC<{
 	children: ReactNode;
 	titleShort: string;
-	title: string;
+	title?: string;
 	recipients?: string;
 	heroImage?: string;
 	heroAlt?: string;
@@ -71,7 +72,7 @@ export const Email: FC<{
 					<Recipients recipients={recipients} />
 					<Header title={titleShort} />
 					<Hero imageUrl={heroImage} />
-					<Title title={title} />
+					{title ? <Title title={title} /> : <Hr className="mb-0" />}
 					<main>{children}</main>
 					<Footer imageSource={imageSource} />
 				</Container>
