@@ -28,7 +28,7 @@ export const SectionsWrapper: FC<{
 const Title: FC<{ children: ReactNode; className?: string }> = ({ children, className }) => (
 	<>
 		<h2 className={`w-full text-center m-0 mt-xl mb-xl uppercase text-xl ${className ?? ''}`}>{children}</h2>
-		<Hr />
+		<Hr width={2} />
 	</>
 );
 

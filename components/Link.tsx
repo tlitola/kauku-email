@@ -30,3 +30,14 @@ export const Link: FC<{ variant?: 'inline' | 'button'; location?: 'left' | 'cent
 			{children}
 		</a>
 	);
+
+export const Tel: FC<{ children: string }> = ({ children }) => (
+	<Link target="_self" href={`tel:${children}`}>
+		{children}
+	</Link>
+);
+export const MailTo: FC<{ children: string }> = ({ children }) => (
+	<Link target="_self" href={`mailto:${children}`}>
+		{children}
+	</Link>
+);
