@@ -160,7 +160,7 @@ export const Template: FC = () => (
 				<Text>Huomioittehan leirivalmisteluissa myös seuraavat leiriorganisaation ohjeet:</Text>
 				<List>
 					<Li>Jäykkäkouristus- ja tuhkarokkorokotteen on oltava leirin aikana voimassa </Li>
-					<Li>Suosittelemme myös TBE-rokotetta eli "punkkirokotetta"</Li>{' '}
+					<Li>Suosittelemme myös TBE-rokotetta eli &quot;punkkirokotetta&quot;</Li>{' '}
 					<Li>Piilolinssien käyttö leirillä ei ole suositeltavaa suuren silmätulehdusriskin takia</Li>
 				</List>
 			</Section>

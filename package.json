@@ -2,6 +2,7 @@
 	"name": "kauku-email",
 	"version": "0.0.1",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"build": "npx email build",
 		"dev": "npx email dev",
@@ -13,27 +14,29 @@
 		"test:watch": "vitest"
 	},
 	"dependencies": {
-		"@react-email/components": "0.0.31",
-		"@vitejs/plugin-react": "^4.3.4",
-		"react": "19.0.0",
-		"react-dom": "19.0.0"
+		"@react-email/components": "1.0.12",
+		"@vitejs/plugin-react": "6.1.1",
+		"react": "19.2.8",
+		"react-dom": "19.2.8"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.17.0",
-		"@types/react": "19.0.1",
-		"@types/react-dom": "19.0.1",
-		"eslint": "^9.17.0",
-		"eslint-plugin-prettier": "^5.2.1",
-		"eslint-plugin-react": "^7.37.3",
-		"globals": "^15.14.0",
-		"happy-dom": "^16.3.0",
-		"husky": "^9.1.7",
-		"lint-staged": "^15.3.0",
-		"prettier": "^3.4.2",
-		"react-email": "3.0.4",
-		"tailwindcss": "^3.4.17",
-		"typescript-eslint": "^8.27.0",
-		"typescript": "^5.8.2",
-		"vitest": "^2.1.8"
+		"@eslint/js": "9.39.5",
+		"@react-email/ui": "6.9.3",
+		"@types/react": "19.2.18",
+		"@types/react-dom": "19.2.5",
+		"eslint": "9.39.5",
+		"eslint-config-prettier": "10.1.8",
+		"eslint-plugin-prettier": "5.5.6",
+		"eslint-plugin-react": "7.37.5",
+		"globals": "17.11.0",
+		"happy-dom": "20.12.0",
+		"husky": "9.1.7",
+		"lint-staged": "17.4.1",
+		"prettier": "3.9.6",
+		"react-email": "6.9.3",
+		"tailwindcss": "4.3.3",
+		"typescript-eslint": "8.68.0",
+		"typescript": "6.0.3",
+		"vitest": "4.1.11"
 	}
 }
