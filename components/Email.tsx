@@ -35,22 +35,8 @@ export const Email: FC<{
 				<style>
 					{
 						/* language=CSS */ `
-						.navigation-link {
-							background-color: ${colors.primary};
-						}
-
 						.navigation-link:hover {
 							background-color: ${colors.secondary};
-						}
-
-						.section-odd {
-							color: white;
-							background-color: ${colors.secondary};
-						}
-
-						.section-even {
-							color: ${colors.primary};
-							background-color: white;
 						}
 
 						a {

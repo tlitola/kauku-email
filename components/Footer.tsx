@@ -30,29 +30,39 @@ export const Footer: FC<{ imageSource?: string }> = ({ imageSource }) => (
 		<Row>
 			<Column className="w-1/3" valign="top" align="center">
 				<Title>Kauka-Kuutit ry</Title>
-				<Text>Hansatie 2B, 02780 Espoo</Text>
-				<Text>
-					<Link className="text-wrap" href="mailto:info@kauku.fi">
+				<Text className="text-white">Hansatie 2B, 02780 Espoo</Text>
+				<Text className="text-white">
+					<Link className="text-wrap text-white" href="mailto:info@kauku.fi">
 						info@&#8203;kauku.fi
 					</Link>
 				</Text>
-				<Text>
-					<Link href="https://www.kauku.fi">kauku.fi</Link>
+				<Text className="text-white">
+					<Link className="text-white" href="https://www.kauku.fi">
+						kauku.fi
+					</Link>
 				</Text>
 			</Column>
 			<Column className="w-1/3 mx-sm" align="center" valign="top">
 				<Title>Lisätietoja</Title>
-				<Text>
-					<Link href="https://www.kauku.fi/liity-jaseneksi/">Mukaan toimintaan</Link>
+				<Text className="text-white">
+					<Link className="text-white" href="https://www.kauku.fi/liity-jaseneksi/">
+						Mukaan toimintaan
+					</Link>
 				</Text>
-				<Text>
-					<Link href="https://www.kauku.fi/lippukunta/hyva-tietaa-usein-kysytyt-kysymykset-ukk/">UKK </Link>
+				<Text className="text-white">
+					<Link className="text-white" href="https://www.kauku.fi/lippukunta/hyva-tietaa-usein-kysytyt-kysymykset-ukk/">
+						UKK{' '}
+					</Link>
 				</Text>
-				<Text>
-					<Link href="https://www.kauku.fi/lippukunta/ryhmien-kokoontumisajat/">Ryhmät </Link>
+				<Text className="text-white">
+					<Link className="text-white" href="https://www.kauku.fi/lippukunta/ryhmien-kokoontumisajat/">
+						Ryhmät{' '}
+					</Link>
 				</Text>
-				<Text>
-					<Link href="https://www.kauku.fi/lippukunta/about/yhteystiedot/">Yhteystiedot </Link>
+				<Text className="text-white">
+					<Link className="text-white" href="https://www.kauku.fi/lippukunta/about/yhteystiedot/">
+						Yhteystiedot{' '}
+					</Link>
 				</Text>
 			</Column>
 			<Column className="w-1/3" align="center" valign="top">
@@ -70,8 +80,8 @@ export const Footer: FC<{ imageSource?: string }> = ({ imageSource }) => (
 							</Link>
 						</Column>
 						<Column className="w-7/12">
-							<Link href="https://www.facebook.com/kaukakuutit">
-								<Text className="mb-0">Facebook</Text>
+							<Link className="text-white" href="https://www.facebook.com/kaukakuutit">
+								<Text className="mb-0 text-white">Facebook</Text>
 							</Link>
 						</Column>
 					</Row>
@@ -87,8 +97,8 @@ export const Footer: FC<{ imageSource?: string }> = ({ imageSource }) => (
 							</Link>
 						</Column>
 						<Column className="w-7/12">
-							<Link href="https://www.instagram.com/kaukakuutit/">
-								<Text className="mb-0">Instagram</Text>
+							<Link className="text-white" href="https://www.instagram.com/kaukakuutit/">
+								<Text className="mb-0 text-white">Instagram</Text>
 							</Link>
 						</Column>
 					</Row>

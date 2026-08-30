@@ -3,7 +3,7 @@ import { Column, Link, Row, Section, Text } from '@react-email/components';
 import { Img } from './Img';
 
 const NavigationLink = ({ children, href }: PropsWithChildren<{ href: string }>) => (
-	<Column className="navigation-link w-1/3 text-nowrap" align="center">
+	<Column className="navigation-link bg-primary w-1/3 text-nowrap" align="center">
 		<Link className="block text-white font-bold p-lg" href={href} rel="noreferrer noopener" target="_blank">
 			{children}
 		</Link>

@@ -12,14 +12,25 @@ export const SectionsWrapper: FC<{
 }> = ({ children, final, alternateColors = true, backgroundColor }) => {
 	return (
 		<>
-			{(Array.isArray(children) ? children : [children]).map((child, i) => (
-				<div
-					className={`w-full ${alternateColors ? (i % 2 === 0 ? 'section-even' : 'section-odd') : 'section-even'} ${backgroundColor ? `bg-[${backgroundColor in colors ? colors[backgroundColor as Colors] : backgroundColor}]` : ''} `}
-					key={`section-${i}`}
-				>
-					{child}
-				</div>
-			))}
+			{(Array.isArray(children) ? children : [children]).map((child, i) => {
+				const isOdd = alternateColors && i % 2 !== 0;
+				const bg = backgroundColor
+					? backgroundColor in colors
+						? colors[backgroundColor as Colors]
+						: backgroundColor
+					: isOdd
+						? colors.secondary
+						: colors.white;
+				const textColor = isOdd ? colors.white : colors.primary;
+				return (
+					<ReactEmailSection
+						key={`section-${i}`}
+						className={`w-full section-${isOdd ? 'odd' : 'even'} bg-[${bg}] text-[${textColor}]`}
+					>
+						{child}
+					</ReactEmailSection>
+				);
+			})}
 			{!final && <Divider />}
 		</>
 	);
