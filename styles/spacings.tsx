@@ -8,4 +8,5 @@ export const spacings = {
 	xl: tailwindConfig.theme.extend.spacing.xl,
 	'2xl': tailwindConfig.theme.extend.spacing['2xl'],
 	'3xl': tailwindConfig.theme.extend.spacing['3xl'],
+	'4xl': tailwindConfig.theme.extend.spacing['4xl'],
 };

@@ -14,7 +14,7 @@ export const Header: FC<{ title: string }> = ({ title }) => (
 	<Section>
 		<Row className="mb-lg">
 			<NavigationLink href="https://www.kauku.fi/ajankohtaiset/">Ajankohtaista</NavigationLink>
-			<NavigationLink href="https://www.kauku.fi/calendar/tapahtumat/">Kalenteri</NavigationLink>
+			<NavigationLink href="https://www.kauku.fi/lippukunta/kestavasti-partiossa/">Kestävästi partiossa</NavigationLink>
 			<NavigationLink href="https://www.kauku.fi/lippukunta/hyva-tietaa-usein-kysytyt-kysymykset-ukk/">
 				UKK
 			</NavigationLink>

@@ -6,8 +6,8 @@ import { Link } from './Link';
 import { Img } from './Img';
 import { InfoText } from './InfoText';
 
-const Title: FC<{ children: ReactNode }> = ({ children }) => (
-	<Text className="font-bold text-white text-md text-nowrap">{children}</Text>
+const Title: FC<{ children: ReactNode; className?: string }> = ({ children, className }) => (
+	<Text className={`font-bold text-white text-md text-nowrap ${className}`}>{children}</Text>
 );
 
 export const Footer: FC<{ imageSource?: string }> = ({ imageSource }) => (
@@ -27,7 +27,7 @@ export const Footer: FC<{ imageSource?: string }> = ({ imageSource }) => (
 				</InfoText>
 			</Column>
 		</Row>
-		<Row>
+		<Row className="mb-lg">
 			<Column className="w-1/3" valign="top" align="center">
 				<Title>Kauka-Kuutit ry</Title>
 				<Text className="text-white">Hansatie 2B, 02780 Espoo</Text>
@@ -47,6 +47,11 @@ export const Footer: FC<{ imageSource?: string }> = ({ imageSource }) => (
 				<Text className="text-white">
 					<Link className="text-white" href="https://www.kauku.fi/liity-jaseneksi/">
 						Mukaan toimintaan
+					</Link>
+				</Text>
+				<Text className="text-white">
+					<Link className="text-white" href="https://www.kauku.fi/calendar/tapahtumat/">
+						Kalenteri
 					</Link>
 				</Text>
 				<Text className="text-white">
@@ -103,6 +108,30 @@ export const Footer: FC<{ imageSource?: string }> = ({ imageSource }) => (
 						</Column>
 					</Row>
 				</ReactEmailSection>
+			</Column>
+		</Row>
+		<Row>
+			<Column className="w-1/2" valign="top" align="center">
+				<Link href="https://www.kauku.fi/lippukunta/kestavasti-partiossa/" className="text-white">
+					<Img
+						src="https://www.kauku.fi/wp-content/uploads/medium_kestavasti_partiossa_tunnus_pyorea.webp"
+						alt="Kestävästi partiossa -logo"
+						width={128}
+						className="mb-lg"
+					/>
+					<Title>Kestävästi partiossa</Title>
+				</Link>
+			</Column>
+			<Column className="w-1/2" valign="top" align="center">
+				<Link href="https://www.partio.fi/nyt/kestavasti-partiossa/" className="text-white">
+					<Img
+						src="https://www.kauku.fi/wp-content/uploads/helppotulla-1.png"
+						alt="Helppo tulla -logo"
+						width={128}
+						className="mb-lg"
+					/>
+					<Title>Helppo tulla</Title>
+				</Link>
 			</Column>
 		</Row>
 	</Section>

@@ -15,7 +15,7 @@ describe('Header', () => {
 		expect(hrefs).toEqual(
 			expect.arrayContaining([
 				'https://www.kauku.fi/ajankohtaiset/',
-				'https://www.kauku.fi/calendar/tapahtumat/',
+				'https://www.kauku.fi/lippukunta/kestavasti-partiossa/',
 				'https://www.kauku.fi/lippukunta/hyva-tietaa-usein-kysytyt-kysymykset-ukk/',
 			])
 		);

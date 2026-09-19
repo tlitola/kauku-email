@@ -63,6 +63,7 @@ export default {
 				xl: '16px',
 				'2xl': '24px',
 				'3xl': '32px',
+				'4xl': '48px',
 			},
 			colors: {
 				primary: '#253765',
