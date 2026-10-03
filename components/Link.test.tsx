@@ -12,7 +12,7 @@ describe('Link', () => {
 	});
 
 	it('falls back to the children as the href when none is given', async () => {
-		const doc = await renderEmail(<Link>https://fallback.example.com</Link>);
+		const doc = await renderEmail(<Link>fallback.example.com</Link>);
 		expect(doc.querySelector('a')!.getAttribute('href')).toBe('https://fallback.example.com');
 	});
 

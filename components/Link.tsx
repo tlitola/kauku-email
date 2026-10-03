@@ -24,7 +24,7 @@ export const Link: FC<{ variant?: 'inline' | 'button'; location?: 'left' | 'cent
 			className={`underline text-inherit ${className ?? ''}`}
 			rel="noreferrer noopener"
 			target="_blank"
-			href={href ?? children?.toString()}
+			href={href ?? 'https://' + children?.toString()}
 			{...props}
 		>
 			{children}

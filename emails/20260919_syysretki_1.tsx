@@ -135,7 +135,7 @@ export const Template: FC = () => (
 					<Column className="w-2/3">
 						<List>
 							<Li>
-								<b>Kuksaan viimeistään 16.10.</b> <Link>kuksaan.fi/96439</Link>
+								<b>Kuksaan viimeistään 16.10.</b> <Link href="https://kuksaan.fi/96439">kuksaan.fi/96439</Link>
 							</Li>
 							<Li>
 								Perhepartiolaiset ilmoittautuvat kaikki omilla tunnuksillaan, lapset ja huoltajat erikseen (jos niitä ei
@@ -244,7 +244,7 @@ export const Template: FC = () => (
 			<Section>
 				<Text>
 					Lisätietoa retkestä, ja esimerkiksi pakkauslista, on luvassa ilmoittautuneille toisessa retkikirjeessä
-					lokakuussa. Sillä välin mahdollisiin kysymyksiin vastaava retkenjohtaja Touko (p. <Tel>045 209 3886</Tel>,{' '}
+					lokakuussa. Sillä välin mahdollisiin kysymyksiin vastaa retkenjohtaja Touko (p. <Tel>045 209 3886</Tel>,{' '}
 					<MailTo>touko.litola@kauku.fi</MailTo>)
 				</Text>
 			</Section>
