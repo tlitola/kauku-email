@@ -108,7 +108,7 @@ export const Template: FC = () => (
 						<Img
 							src="https://www.kauku.fi/wp-content/uploads/medium_kestavasti_partiossa_tunnus_pyorea.webp"
 							className="w-full"
-							alt="Kauka-Kuuttien uusi logo"
+							alt="Kestävästi partiossa tunnus"
 						/>
 					</Column>
 				</Row>
