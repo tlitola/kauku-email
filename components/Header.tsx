@@ -22,7 +22,7 @@ export const Header: FC<{ title: string }> = ({ title }) => (
 		<Row className="mb-lg">
 			<Column className="pl-3xl">
 				<Link href="https://kauku.fi" rel="noreferrer noopener" target="_blank">
-					<Img src="https://www.kauku.fi/wp-content/uploads/kauku-e1735839745743.png" alt="KauKu logo" width={64} />
+					<Img src="https://www.kauku.fi/wp-content/uploads/kauku_joulu.png" alt="KauKu logo" width={64} />
 				</Link>
 			</Column>
 			<Column align="right" className="pr-3xl">

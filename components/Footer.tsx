@@ -114,7 +114,7 @@ export const Footer: FC<{ imageSource?: string }> = ({ imageSource }) => (
 			<Column className="w-1/2" valign="top" align="center">
 				<Link href="https://www.kauku.fi/lippukunta/kestavasti-partiossa/" className="text-white">
 					<Img
-						src="https://www.kauku.fi/wp-content/uploads/medium_kestavasti_partiossa_tunnus_pyorea.webp"
+						src="https://www.kauku.fi/wp-content/uploads/kestavasti_partiossa_tunnus_pyorea_medium.png"
 						alt="Kestävästi partiossa -logo"
 						width={128}
 						className="mb-lg"
